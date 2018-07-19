@@ -11,6 +11,8 @@ android {
             keyPassword '123456'
             storeFile file('/Users/gdy/Desktop/code/MavenTest/mavenTest.jks')
             storePassword '123456'
+            v1SigningEnabled true
+            v2SigningEnabled true
         }
     }
     compileSdkVersion 26
