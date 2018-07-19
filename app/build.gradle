@@ -5,6 +5,14 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'mavenTest'
+            keyPassword '123456'
+            storeFile file('/Users/gdy/Desktop/code/MavenTest/mavenTest.jks')
+            storePassword '123456'
+        }
+    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.gdy.maventest"
